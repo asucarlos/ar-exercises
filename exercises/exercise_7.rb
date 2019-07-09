@@ -9,4 +9,9 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
+puts "type the name of the store"
+@store_name = $stdin.gets.chomp
+@store_name = Store.create!(name: @store_name, annual_revenue: 0, mens_apparel: true, womens_apparel: true)
+
+
 # Your code goes here ...
